@@ -19,6 +19,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lifepillar/vim-solarized8'
 call plug#end()
 
+if !isdirectory(expand('~/.config/nvim/plugins/'))
+    PlugInstall
+endif
+
 nnoremap <silent> <space>fr  <Cmd>History<CR>
 nnoremap <silent> <space>ff  <Cmd>Files<CR>
 nnoremap <silent> <space>fb  <Cmd>Buffers<CR>

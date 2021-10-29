@@ -4,7 +4,7 @@ set mouse=a
 tnoremap <Esc> <C-\><C-n>
 nnoremap <Space>t :terminal ++curwin<Enter>
 
-set termguicolors
+" set termguicolors
 
 if has('vim_starting')
     let &t_SI .= "\e[5 q"

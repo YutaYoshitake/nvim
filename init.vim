@@ -77,8 +77,8 @@ syntax enable
 set background=light
 colorscheme solarized8_high
 
-hi Normal guibg=#FFF2D0
-hi LineNr guibg=#FFF2D0
+" hi Normal guibg=#FFF2D0
+" hi LineNr guibg=#FFF2D0
 
 
 

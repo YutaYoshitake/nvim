@@ -74,7 +74,7 @@ augroup END
 
 
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized8_high
 
 " hi Normal guibg=#FFF2D0
@@ -82,6 +82,6 @@ colorscheme solarized8_high
 
 
 
-sp
-vs
-resize 75
+" sp
+" vs
+" resize 75

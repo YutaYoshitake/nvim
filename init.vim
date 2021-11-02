@@ -4,7 +4,7 @@ set mouse=a
 tnoremap <Esc> <C-\><C-n>
 nnoremap <Space>t :terminal ++curwin<Enter>
 
-" set termguicolors
+set termguicolors
 
 if has('vim_starting')
     let &t_SI .= "\e[5 q"
@@ -17,11 +17,9 @@ call plug#begin('~/.config/nvim/plugins')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lifepillar/vim-solarized8'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'https://github.com/cohama/lexima.vim'
 call plug#end()
-
-if !isdirectory(expand('~/.config/nvim/plugins/'))
-    PlugInstall
-endif
 
 nnoremap <silent> <space>fr  <Cmd>History<CR>
 nnoremap <silent> <space>ff  <Cmd>Files<CR>
@@ -40,6 +38,9 @@ noremap <S-Right> <C-w>l
 noremap <S-Left> <C-w>h
 noremap <S-Up> <C-w>k
 noremap <S-Down> <C-w>j
+
+" ranger.vim settings
+nnoremap <Space>d <Cmd>Ranger<CR>
 
 
 " noremap H ^
@@ -85,3 +86,6 @@ colorscheme solarized8_high
 " sp
 " vs
 " resize 75
+
+
+iab pdb import pdb; pdb.set_trace()
